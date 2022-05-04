@@ -1,65 +1,137 @@
- 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+      <div class="container-fluid">
+        <a href="/" class="logo"><img
+            src="img/https://images.unsplash.com/photo-1590698933947-a202b069a861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFwcHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="Logo"></a>
+
+        <a class="navbar-brand" href="index.html">Eventísimo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Nosotros</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about.html">Nosotros</a>
+                <a class="dropdown-item" href="employees.html">Empleos</a>
+                <a class="dropdown-item" href="team_work.html">Equipo de trabajo</a>
+
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Servicios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="opinions.html">Opiniones</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creditos.html">Creditos</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
   
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+  <br><br>
+  <h1 style="text-align: center;">Expertos en animar tú evento </h1>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/party.jpg" class="adjust_img d-block " alt="Imagen de una fiesta" id="slider"
+          style="width: 90%; height: 800px; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/social-event.jpg" class="adjust_img d-block " alt="Imagen de un evento social" id="slider"
+          style="width: 90%; height: 800px; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/wedding.jpg" class="d-block" id="adjust_img" alt="Imagen de una boda" id="slider"
+          style="width: 90%; height: 800px; margin-left: auto; margin-right: auto;">
       </div>
     </div>
-  </nav>
-  
-  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="js/bootstrap.min.js" ></script>
-  </body>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- <div class="cont-img">
+ style="width: 90%; height: 800px; margin-left: auto; margin-right: auto;"
+
+    <img src="https://images.unsplash.com/photo-1644982652063-1a9b8d24f0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+    <div class="texto-encima">Texto</div>
+    <div class="centrado">Centrado</div>
+  </div>
+  -->
+
+  <footer class="bg-dark">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-muted">BY:
+        <br> Gabriel Andrés Rodríguez Acevedo
+        <br>506201021
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
 </html>

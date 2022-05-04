@@ -309,7 +309,7 @@ figure {
 
 img,
 svg {
-  vertical-align: middle;
+  vertical-align: center;
 }
 
 table {
@@ -4001,7 +4001,7 @@ fieldset:disabled .btn {
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: black;
   border: 0;
 }
 
@@ -8066,6 +8066,9 @@ fieldset:disabled .btn {
 
 .me-auto {
   margin-right: auto !important;
+}
+.mr-auto {
+  margin-left: auto !important;
 }
 
 .mb-0 {
@@ -12184,6 +12187,30 @@ fieldset:disabled .btn {
   box-shadow: inset 2px 2px 6px rgba(109, 114, 121, 0.2), inset -3px -2px 4px rgba(255, 255, 255, 0.2);
 }
 
+.cont-img{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .list-group-item {
   background-color: transparent;
+}
+
+​​#slider{
+  width: 90%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
