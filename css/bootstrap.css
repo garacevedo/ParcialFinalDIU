@@ -8916,7 +8916,7 @@ fieldset:disabled .btn {
 }
 
 .rounded {
-    border-radius: 0.25rem !important;
+    border-radius: 0.50rem !important;
 }
 
 .rounded-0 {
@@ -12557,5 +12557,9 @@ fieldset:disabled .btn {
 .inicio_img {
     width: 250px;
     height: 150px;
-    ;
+}
+
+.creditos_img {
+    width: 200px;
+    height: 150px;
 }
