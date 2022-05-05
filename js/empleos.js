@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    var divSaludos = document.getElementById("empleos");
+    var divEmpleos = document.getElementById("empleos");
 
     // Creando/Consultado el array con datos 
     // a partir de lo que exista en localStorage
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Poblando el div que muestra los Empleos
     var listadoEmpleos = JSON.parse(localStorage.getItem("arrayEmpleos"));
-    var divEmpleos = document.getElementById("Empleos");
+    var divEmpleos = document.getElementById("empleos");
     console.log(listadoEmpleos);
     listadoEmpleos.forEach(element => {
         divEmpleos.innerHTML = divEmpleos.innerHTML + '<div class="card"><div class="card-body"><h5 class="card-title">' + element["nombre"] + ' dice: </h5><p>' + element["saludo"] + '</p></div></div>';
