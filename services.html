@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <link rel="icon" href="img/logo_size-2.png">
     <title>Servicios - EventFormal</title>
 </head>
 
@@ -18,9 +18,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
             <div class="container-fluid">
-                <a href="/" class="logo"><img src="img/https://images.unsplash.com/photo-1590698933947-a202b069a861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFwcHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Logo"></a>
+                <a href="index.html"><img class="rounded-circle" style="width: 100px; height: 100px;" src="img/logo_size-2.jpg" alt="Logo"></a>
 
-                <a class="navbar-brand" href="index.html">EventFormal</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,78 +65,139 @@
         </nav>
     </header>
 
+
+    <br>
+    <h1 class="center">Servicios</h1>
+    <br><br>
+
+
     <div class="container-fluid">
-        <div class="row cont-img-2 d-flex align-items-center ">
-            <div class="col-md-12 ">
-                <div class="row ">
-                    <div class="col-md-12 ">
-                        <h1>
-                            ¿Qué tipo de evento necesitas animar?
-                        </h1>
-
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-md-12 ">
-                        <a class="btn btn-success " href="contact.html ">                            
-                            CONTÁCTANOS
-                    
-                          </a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6">
-                    <h2>Bodas</h2>
-                    <div class="flip-card d-flex align-items-center">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-10 ">
+                    <div class="row text-white">
+                        <div class="col-sm-12">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nuevos servicios</h5>
+                                    <!--Aquí va el formulario-->
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">
+                                                    Nombre del servicio
+                                                    </label>
+                                            <input type="text" class="form-control" id="nombre_servicio" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">
+                                                    Ingresa la descripción del servicio
+                                                    </label>
+                                            <textarea id="texto_servicio" cols="30" rows="10" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">
+                                                    Link de imagen del servicio
+                                                    </label>
+                                            <input type="text" class="form-control" id="link" />
+                                        </div>
+                                        <div class="form-group">
+                                            <br>
+                                            <input type="submit" value="Registrar" class="btn btn-outline-success" runat="server" onclick="registrarServicio()" id="submitButton" />
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>Graduaciones</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="flip-card d-flex align-items-center">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img/services-bodas.jpg" alt="Avatar" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2>Bodas</h2>
+                                    <p>Nuestras bodas son únicas y podemos sorprenderte junto a tus invitados para que celebren hasta que la muerta los separen. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="flip-card d-flex align-items-center">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img/services-aniversarios.jpg" alt="Avatar" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2>Aniversarios</h2>
+                                    <p>No más peleas entre parejas, deja que nos encargemos para la celebración de tú aniversario.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="flip-card d-flex align-items-center">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img/services-graduaciones.jpg" alt="Avatar" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2>Graduaciones</h2>
+                                    <p>Si no tienes a quien animar tu graduación, ya encontraste a la empresa correcta. Entendemos las necesidades y no vas a aburrir en tu celebración.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="flip-card d-flex align-items-center">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="img/services-trabajo.jpg" alt="Avatar" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2>Reuniones empresariales</h2>
+                                    <p>Animamos tú reunión de tu trabajo nosotros, somo los mejores y muchos de nuestros clientes ya ha obtenido un <strong>¡AUMENTO!</strong>, gracias a nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-12">
+                    <div id="servicios" style="display: block;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <br><br><br>
+    <footer class="bg-dark ">
+        <div class="container px-4 px-lg-5 ">
+            <div class="small text-center text-muted ">BY:
+                <br> Gabriel Andrés Rodríguez Acevedo
+                <br>506201021
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Aniversarios</h2>
-                </div>
-                <div class="col-md-6">
-                    <h2>Reuniones empresariales</h2>
-                </div>
-            </div>
-        </div>
-        <br>
+    </footer>
 
-
-
-        <footer class="bg-dark ">
-            <div class="container px-4 px-lg-5 ">
-                <div class="small text-center text-muted ">BY:
-                    <br> Gabriel Andrés Rodríguez Acevedo
-                    <br>506201021
-                </div>
-            </div>
-        </footer>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/bootstrap.min.js "></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/servicios.js"></script>
+    <script src="js/bootstrap.min.js "></script>
 
 
 </body>

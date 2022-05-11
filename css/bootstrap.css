@@ -12594,8 +12594,8 @@ fieldset:disabled .btn {
 .img-nosotros {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     margin-right: auto;
-    width: 90%;
-    height: 300px;
+    width: 50%;
+    
 }
 
 .flip-card {
@@ -12651,7 +12651,7 @@ fieldset:disabled .btn {
 /* Style the back side */
 
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #F8C9BF;
     color: white;
     transform: rotateY(180deg);
 }
